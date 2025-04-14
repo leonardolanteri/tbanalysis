@@ -1,0 +1,12 @@
+[
+    {
+        "start": "2737",
+        "stop": "2936",
+        "board": "37",
+        "bias": "310",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    }
+]

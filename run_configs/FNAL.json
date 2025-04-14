@@ -1,0 +1,162 @@
+[
+    {
+        "start": "711771",
+        "stop": "712108",
+        "board": "111",
+        "bias": "0",
+        "offset": 0,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712046",
+        "stop": "712096",
+        "board": "111",
+        "bias": "140",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712110",
+        "stop": "712168",
+        "board": "111",
+        "bias": "140",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712169",
+        "stop": "712203",
+        "board": "111",
+        "bias": "150",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712489",
+        "stop": "712528",
+        "board": "111",
+        "bias": "150",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712529",
+        "stop": "712538",
+        "board": "111",
+        "bias": "150",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712546",
+        "stop": "712559",
+        "board": "111",
+        "bias": "150",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "712560",
+        "stop": "712758",
+        "board": "111",
+        "bias": "150",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713011",
+        "stop": "713075",
+        "board": "111",
+        "bias": "160",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713076",
+        "stop": "713161",
+        "board": "111",
+        "bias": "170",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713162",
+        "stop": "713286",
+        "board": "111",
+        "bias": "180",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713552",
+        "stop": "713604",
+        "board": "111",
+        "bias": "180",
+        "offset": 10,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713605",
+        "stop": "713618",
+        "board": "111",
+        "bias": "210",
+        "offset": 10,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713824",
+        "stop": "713832",
+        "board": "111",
+        "bias": "210",
+        "offset": 10,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713833",
+        "stop": "713839",
+        "board": "111",
+        "bias": "210",
+        "offset": 10,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713840",
+        "stop": "713872",
+        "board": "111",
+        "bias": "210",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    }
+]

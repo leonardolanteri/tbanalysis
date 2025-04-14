@@ -1,0 +1,101 @@
+[
+    {
+        "start": "115785",
+        "stop": "115884",
+        "setup": "207-208",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "225",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "116085",
+        "stop": "116184",
+        "setup": "207-208",
+        "offset": 10.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "220",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116185",
+        "stop": "116284",
+        "setup": "207-208",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "215",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116285",
+        "stop": "116384",
+        "setup": "207-208",
+        "offset": 25.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "215",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116385",
+        "stop": "116484",
+        "setup": "207-208",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "215",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116185",
+        "stop": "116284",
+        "setup": "207-208",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "200",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116285",
+        "stop": "116384",
+        "setup": "207-208",
+        "offset": 25.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "200",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116385",
+        "stop": "116484",
+        "setup": "207-208",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "200",
+        "file_from": "DESY_April"       
+    },
+    {
+        "start": "116485",
+        "stop": "116584",
+        "setup": "207-208",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "225",
+        "file_from": "DESY_April"       
+    }
+]

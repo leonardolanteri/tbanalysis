@@ -1,0 +1,68 @@
+[
+    {
+        "start": "112817",
+        "stop": "112838",
+        "setup": "209",
+        "offset": 10.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "180",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "112849",
+        "stop": "112948",
+        "setup": "209",
+        "offset": 15.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "210",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "112999",
+        "stop": "1123048",
+        "setup": "209",
+        "offset": 20.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "210",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "113049",
+        "stop": "113098",
+        "setup": "209",
+        "offset": 5.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "210",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "113099",
+        "stop": "113138",
+        "setup": "209",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "210",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "113170",
+        "stop": "113176",
+        "setup": "209",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "210",
+        "file_from": "DESY_April"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "start": "713873",
+        "stop": "713978",
+        "board": "111",
+        "bias": "220",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    },
+    {
+        "start": "713979",
+        "stop": "714035",
+        "board": "111",
+        "bias": "240",
+        "offset": 15,
+        "energy": 120.0,
+        "power": "i1",
+        "file_from": "FNAL"
+    }
+]

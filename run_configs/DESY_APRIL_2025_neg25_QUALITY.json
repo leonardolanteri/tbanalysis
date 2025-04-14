@@ -1,0 +1,57 @@
+[
+    {
+        "start": "117626",
+        "stop": "117825",
+        "setup": "207",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "175",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "117826",
+        "stop": "118025",
+        "setup": "207",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "185",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "118026",
+        "stop": "118225",
+        "setup": "207",
+        "offset": 25.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "185",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "118311",
+        "stop": "118510",
+        "setup": "207",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "180",
+        "file_from": "DESY_April"
+    },
+    {
+        "start": "118532",
+        "stop": "118731",
+        "setup": "207",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "module": "207",
+        "bias": "215",
+        "file_from": "DESY_April"
+    } 
+]

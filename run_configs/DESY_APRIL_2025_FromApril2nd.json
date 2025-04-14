@@ -1,0 +1,13 @@
+[
+    {
+        "start": "113239",
+        "stop": "113338",
+        "setup": "209",
+        "offset": 15.0,
+        "energy": 3.0,
+        "power": "i1",
+        "module": "209",
+        "bias": "235",
+        "file_from": "DESY_April"
+    }
+]

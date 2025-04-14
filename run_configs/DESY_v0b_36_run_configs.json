@@ -1,0 +1,192 @@
+[
+    {
+        "start": "1181",
+        "stop": "1322",
+        "board": "36",
+        "bias": "242",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "1325",
+        "stop": "1326",
+        "board": "36",
+        "bias": "242",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "1329",
+        "stop": "1331",
+        "board": "36",
+        "bias": "242",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "1332",
+        "stop": "1333",
+        "board": "36",
+        "bias": "242",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "981",
+        "stop": "1129",
+        "board": "36",
+        "bias": "244",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "1131",
+        "stop": "1180",
+        "board": "36",
+        "bias": "244",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "369",
+        "stop": "373",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "375",
+        "stop": "378",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "379",
+        "stop": "412",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "480",
+        "stop": "489",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "490",
+        "stop": "536",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "538",
+        "stop": "579",
+        "board": "36",
+        "bias": "245",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "581",
+        "stop": "780",
+        "board": "36",
+        "bias": "246",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "781",
+        "stop": "980",
+        "board": "36",
+        "bias": "247",
+        "offset": 8.0,
+        "energy": 3.0,
+        "power": "i4",
+        "file_from": "DESY"
+    },
+    {
+        "start": "4400",
+        "stop": "4599",
+        "board": "36",
+        "bias": "250",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    },
+    {
+        "start": "4900",
+        "stop": "5049",
+        "board": "36",
+        "bias": "260",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    },
+    {
+        "start": "5050",
+        "stop": "5199",
+        "board": "36",
+        "bias": "260",
+        "offset": 20.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    },
+    {
+        "start": "5200",
+        "stop": "5349",
+        "board": "36",
+        "bias": "260",
+        "offset": 22.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    },
+    {
+        "start": "4600",
+        "stop": "4899",
+        "board": "36",
+        "bias": "270",
+        "offset": 15.0,
+        "energy": 5.0,
+        "power": "i1",
+        "file_from": "DESY"
+    }
+]

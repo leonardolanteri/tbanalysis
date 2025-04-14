@@ -1,0 +1,112 @@
+[
+    {
+        "start": "7524",
+        "stop": "7714",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7524",
+        "stop": "7714",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7725",
+        "stop": "7738",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "245",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7725",
+        "stop": "7738",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "245",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7925",
+        "stop": "8124",
+        "setup": "36-40",
+        "offset": 20.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7925",
+        "stop": "8124",
+        "setup": "36-40",
+        "offset": 20.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "40",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7725",
+        "stop": "7738",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "245",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7725",
+        "stop": "7738",
+        "setup": "36-40",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "245",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7925",
+        "stop": "8124",
+        "setup": "36-40",
+        "offset": 20.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    },
+    {
+        "start": "7925",
+        "stop": "8124",
+        "setup": "36-40",
+        "offset": 20.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "240",
+        "file_from": "SPS_FAST"
+    }
+]

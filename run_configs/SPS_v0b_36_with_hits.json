@@ -1,0 +1,112 @@
+[
+   {
+        "start": "6684",
+        "stop": "6809",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+    {
+        "start": "6810",
+        "stop": "6915",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+    {
+        "start": "6916",
+        "stop": "7032",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+   {
+        "start": "7034",
+        "stop": "7102",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+    {
+        "start": "7103",
+        "stop": "7247",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+    {
+        "start": "7256",
+        "stop": "7288",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+    {
+        "start": "7290",
+        "stop": "7317",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "230",
+        "file_from": "SPS"
+    },
+   {
+        "start": "7319",
+        "stop": "7333",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "240",
+        "file_from": "SPS"
+    },
+    {
+        "start": "7334",
+        "stop": "7424",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "240",
+        "file_from": "SPS"
+    },
+    {
+        "start": "7425",
+        "stop": "7516",
+        "setup": "40-36",
+        "offset": 15.0,
+        "energy": 120.0,
+        "power": "i1",
+        "module": "36",
+        "bias": "240",
+        "file_from": "SPS"
+    }
+]

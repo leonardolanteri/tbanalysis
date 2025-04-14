@@ -1,0 +1,37 @@
+[
+  {
+      "start": "114144",
+      "stop": "114243",
+      "setup": "209",
+      "offset": 15,
+      "energy": 5.0,
+      "power": "i1",
+      "module": "209",
+      "bias": "225",
+      "file_from": "DESY_April"
+  },
+  {
+      "start": "114244",
+      "stop": "114343",
+      "setup": "209",
+      "offset": 20,
+      "energy": 5.0,
+      "power": "i1",
+      "module": "209",
+      "bias": "225",
+      "file_from": "DESY_April"
+  },
+  {
+      "start": "114344",
+      "stop": "114443",
+      "setup": "209",
+      "offset": 10,
+      "energy": 5.0,
+      "power": "i1",
+      "module": "209",
+      "bias": "225",
+      "file_from": "DESY_April"
+  }
+
+]
+
