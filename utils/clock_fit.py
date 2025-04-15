@@ -1,7 +1,8 @@
 import numpy as np
 import awkward as ak
+from typing import Tuple
 
-def get_rising_edge_after_first_fall(nanoseconds: ak.Array, volts_scaled: ak.Array, thresh_low: int, thresh_high: int) -> tuple[ak.Array, ak.Array]:
+def get_rising_edge_after_first_fall(nanoseconds: ak.Array, volts_scaled: ak.Array, thresh_low: int, thresh_high: int) -> Tuple[ak.Array, ak.Array]:
     """
     INPUTS \n
     nanoseconds: array of arrays of times of the square wave in nanoseconds \n

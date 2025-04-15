@@ -11,6 +11,8 @@ import hist
 from hist import Hist
 import mplhep as hep
 plt.style.use(hep.style.CMS)
+from typing import Tuple
+from typing import List
 
 import utils.timewalk as tw
 import utils.analysis as au
@@ -45,7 +47,7 @@ class ThresholdsOld:
 def var_reader(path: str, var: str) -> str:
     return path.split(var+'_')[1].split('_')[0]
 
-def pix_labeler(pix: tuple) -> str:
+def pix_labeler(pix: Tuple) -> str:
     """
     Creates label that is added to filenames for output files for a specific pixel
     """
@@ -53,7 +55,7 @@ def pix_labeler(pix: tuple) -> str:
     if pix: pix_label = f"_r{pix[0]}_c{pix[1]}"
     return pix_label
 
-def plot_saver(pix:tuple, pix_label, post_cut:bool, save_path: str, xVar:str, yVar=None, style=None) -> None:
+def plot_saver(pix:Tuple, pix_label, post_cut:bool, save_path: str, xVar:str, yVar=None, style=None) -> None:
     file_name = 'module'
     if pix: file_name = pix_label[1:]
     file_name += f'_{xVar}'
@@ -97,8 +99,8 @@ def plot_gauss_fit(h: Hist, label=None, color=None, fill_between = True) -> None
     bin_centers = h.axes[0].centers
     label = dedent(f"""
         {label if label is not None else ''}
-        {r"$\mu$"}: {popt[1]:.3f}{r"$\pm$"}{perr[1]:.3f}
-        {r"$\sigma$"}: {abs(popt[2]):.3f}{r"$\pm$"}{perr[2]:.3f}
+        {r"$mu$"}: {popt[1]:.3f}{r"$pm$"}{perr[1]:.3f}
+        {r"$sigma$"}: {abs(popt[2]):.3f}{r"$pm$"}{perr[2]:.3f}
     """).strip()
     #{r"$\chi_{red}^{2}$"}: {red_chi2:3f}
 
@@ -209,7 +211,7 @@ class TBplot:
         with open(path) as f:
             return np.array(json.load(f))
     
-    def set_clims(self, data: akArray, cmin:int = None, cmax:int = None, set_point:int=2) -> tuple:
+    def set_clims(self, data: akArray, cmin:int = None, cmax:int = None, set_point:int=2) -> Tuple:
         def auto_cmin(data:akArray, set_point:int=2) -> int:
             return ak.sort(ak.flatten(data),ascending=True)[set_point]
         def auto_cmax(data:akArray, set_point:int=2) -> int:
@@ -223,8 +225,8 @@ class TBplot:
     def cut_eff_plot(self, save_path:str=None):
         """Bar graph of how much data the cuts removed"""
         self.cut_eff_data.pop('tracks') if 'tracks' in self.cut_eff_data else self.cut_eff_data
-        cut = list(self.cut_eff_data.keys())
-        passing = list(self.cut_eff_data.values())
+        cut = List(self.cut_eff_data.keys())
+        passing = List(self.cut_eff_data.values())
         plt.bar(cut, height=passing)
         try:
             final_eff = passing[-1]/passing[0]*100
@@ -307,7 +309,7 @@ class TBplot:
             plt.savefig(os.path.join(os.path.join(save_path, 'resolution_corr_shape.png'))) 
 
     @figuration(width=9,height=6,font_size=18)
-    def histo1D(self, xVar:str, pix:tuple=None, xcuts:tuple=None, do_fit:bool=True):
+    def histo1D(self, xVar:str, pix:Tuple=None, xcuts:Tuple=None, do_fit:bool=True):
         """Plots 1D histogram based off the field name "xVar" or the awkard event array. """
         h = self.get_hist(xVar,pix=pix)
         hep.histplot(h, color=COLORS[0])
@@ -321,10 +323,10 @@ class TBplot:
         plt.legend()
     
     @figuration(width=9,height=9,font_size=18)
-    def heatmap(self, xVar:str, yVar:str, pix:tuple=None, xcuts:tuple=None, ycuts:tuple=None):
+    def heatmap(self, xVar:str, yVar:str, pix:Tuple=None, xcuts:Tuple=None, ycuts:Tuple=None):
         """
         2D histogram of any field selected by "xVar" and "yVar" in loaded awkward events array
-        xcuts and ycuts are tuples of the high and low to override the thresholds
+        xcuts and ycuts are Tuples of the high and low to override the thresholds
         """
         xVals = self.get_field_vals(xVar, pix=pix)
         yVals = self.get_field_vals(yVar, pix=pix)
@@ -346,7 +348,7 @@ class TBplot:
         plt.legend(labelcolor='w')
 
     @figuration()
-    def timewalk_scatter(self, pix:tuple):
+    def timewalk_scatter(self, pix:Tuple):
         model='cubicLM'
         row, col = pix
         a, b, c, d = self.tw_corr_data[0][row][col], self.tw_corr_data[1][row][col], self.tw_corr_data[2][row][col], self.tw_corr_data[3][row][col]
@@ -366,7 +368,7 @@ class TBplot:
         plt.plot(x, y, color=COLORS[2], label=buildLabel([a, b, c, d], model) + '\n m = {:.2f} \n s = {:.2f}'.format(m,s))
         plt.legend()
 
-    def get_field_vals(self, field:str, pix:tuple=None) -> akArray:
+    def get_field_vals(self, field:str, pix:Tuple=None) -> akArray:
         """Retrieves a values from an awkward array by selecting the field."""
         data = self.events
         if pix is not None:
@@ -376,7 +378,7 @@ class TBplot:
         else:
             return ak.flatten(data[field])
         
-    def get_hist(self, xVar:str, pix:tuple=None) -> Hist:
+    def get_hist(self, xVar:str, pix:Tuple=None) -> Hist:
         """Takes field (corresponding to field in the events awkward array) and fills the 1D histogram"""
         xVals = self.get_field_vals(xVar, pix=pix)
         hist_axis = hist.axis.Regular(*self.hist_bins[xVar], name=xVar)
@@ -385,7 +387,7 @@ class TBplot:
     def update_thresholds(self, thresh_name:str, thresh_value: int):
         setattr(self.thresholds, thresh_name, thresh_value)
 
-    def _draw_thresh_line(self, field:str, is_vertical:bool, cuts:tuple = None, ):
+    def _draw_thresh_line(self, field:str, is_vertical:bool, cuts:Tuple = None, ):
         if cuts is not None:
             self.update_thresholds(f"{field}_low", cuts[0])
             self.update_thresholds(f"{field}_high", cuts[1])
@@ -397,12 +399,12 @@ class TBplot:
                 else:
                     plt.axhline(thresh, color=COLORS[2], label=f"{thresh_name}={thresh}")
     
-    def draw_thresh_vline(self, field: str, cuts:tuple=None):
+    def draw_thresh_vline(self, field: str, cuts:Tuple=None):
         self._draw_thresh_line(field, True, cuts=cuts)
-    def draw_thresh_hline(self, field: str, cuts:tuple=None):
+    def draw_thresh_hline(self, field: str, cuts:Tuple=None):
         self._draw_thresh_line(field, False, cuts=cuts)
 
-    def beam_spot(self, percent, high=None, pixel_excludes:list[tuple]=None) -> np.ndarray:
+    def beam_spot(self, percent, high=None, pixel_excludes:List[Tuple]=None) -> np.ndarray:
         if high is None:
             high = self.hit_map_data.max()
 
@@ -437,7 +439,7 @@ class TBplotRAW:
         self.run_config = RunConfig(**run_config)
         self.thresholds = thresholds
 
-    def set_clims(self, data: akArray, cmin:int = None, cmax:int = None, set_point:int=2) -> tuple:
+    def set_clims(self, data: akArray, cmin:int = None, cmax:int = None, set_point:int=2) -> Tuple:
         def auto_cmin(data:akArray, set_point:int=2) -> int:
             return ak.sort(ak.flatten(data),ascending=True)[set_point]
         def auto_cmax(data:akArray, set_point:int=2) -> int:
@@ -504,7 +506,7 @@ class TBplotRAW:
         plt.legend()
 
     @figuration(width=9,height=6,font_size=18)
-    def histo1D(self, xVar:str, pix:tuple=None, xcuts:tuple=None, do_fit:bool=True):
+    def histo1D(self, xVar:str, pix:Tuple=None, xcuts:Tuple=None, do_fit:bool=True):
         """Plots 1D histogram based off the field name "xVar" or the awkard event array. """
         h = self.get_hist(xVar,pix=pix)
         hep.histplot(h, color=COLORS[0])
@@ -518,10 +520,10 @@ class TBplotRAW:
         plt.legend()
 
     @figuration(width=9,height=9,font_size=18)
-    def heatmap(self, xVar:str, yVar:str, pix:tuple=None, xcuts:tuple=None, ycuts:tuple=None):
+    def heatmap(self, xVar:str, yVar:str, pix:Tuple=None, xcuts:Tuple=None, ycuts:Tuple=None):
         """
         2D histogram of any field selected by "xVar" and "yVar" in loaded awkward events array
-        xcuts and ycuts are tuples of the high and low to override the thresholds
+        xcuts and ycuts are Tuples of the high and low to override the thresholds
         """
         xVals = self.get_field_vals(xVar, pix=pix)
         yVals = self.get_field_vals(yVar, pix=pix)
@@ -542,7 +544,7 @@ class TBplotRAW:
         plt.legend(labelcolor='w')
  
     @figuration()
-    def timewalk_scatter(self, pix:tuple):
+    def timewalk_scatter(self, pix:Tuple):
         model='cubicLM'
         row, col = pix
         a, b, c, d = self.tw_corr_data[0][row][col], self.tw_corr_data[1][row][col], self.tw_corr_data[2][row][col], self.tw_corr_data[3][row][col]
@@ -562,7 +564,7 @@ class TBplotRAW:
         plt.plot(x, y, color=COLORS[2], label=buildLabel([a, b, c, d], model) + '\n m = {:.2f} \n s = {:.2f}'.format(m,s))
         plt.legend()
 
-    def get_field_vals(self, field:str, pix:tuple=None) -> akArray:
+    def get_field_vals(self, field:str, pix:Tuple=None) -> akArray:
         """Retrieves a values from an awkward array by selecting the field."""
         data = self.events
         if pix is not None:
@@ -572,13 +574,13 @@ class TBplotRAW:
         else:
             return ak.flatten(data[field])
         
-    def get_hist(self, xVar:str, pix:tuple=None) -> Hist:
+    def get_hist(self, xVar:str, pix:Tuple=None) -> Hist:
         """Takes field (corresponding to field in the events awkward array) and fills the 1D histogram"""
         xVals = self.get_field_vals(xVar, pix=pix)
         hist_axis = hist.axis.Regular(*self.hist_bins[xVar], name=xVar)
         return Hist(hist_axis).fill(xVals)
     
-    def _draw_thresh_line(self, field:str, is_vertical:bool, cuts:tuple = None, ):
+    def _draw_thresh_line(self, field:str, is_vertical:bool, cuts:Tuple = None, ):
         if cuts is not None:
             self.update_thresholds(f"{field}_low", cuts[0])
             self.update_thresholds(f"{field}_high", cuts[1])
@@ -593,12 +595,12 @@ class TBplotRAW:
     def update_thresholds(self, thresh_name:str, thresh_value: int):
         setattr(self.thresholds, thresh_name, thresh_value)
 
-    def draw_thresh_vline(self, field: str, cuts:tuple=None):
+    def draw_thresh_vline(self, field: str, cuts:Tuple=None):
         self._draw_thresh_line(field, True, cuts=cuts)
-    def draw_thresh_hline(self, field: str, cuts:tuple=None):
+    def draw_thresh_hline(self, field: str, cuts:Tuple=None):
         self._draw_thresh_line(field, False, cuts=cuts)
 
-    # def beam_spot(self, percent, high=None, pixel_excludes:list[tuple]=None) -> np.ndarray:
+    # def beam_spot(self, percent, high=None, pixel_excludes:List[Tuple]=None) -> np.ndarray:
     #     if high is None:
     #         high = self.hit_map_data.max()
 

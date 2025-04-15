@@ -1,5 +1,6 @@
 import awkward as ak
 import numpy as np
+from typing import Tuple
 
 class MCPSignalScaler:
     """
@@ -7,7 +8,7 @@ class MCPSignalScaler:
     Only works for negative mcp peaks
     """
     @staticmethod
-    def calc_mcp_peaks(seconds: np.ndarray, volts: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    def calc_mcp_peaks(seconds: np.ndarray, volts: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
         """
         For an array of MCP signal waveforms; where each waveform is the time and voltage of the signal. 
         This grabs the 3 smallest values (so the peak) then does a PARABOLIC INTERPOLATION to estimate the peak
@@ -80,7 +81,7 @@ class MCPSignalScaler:
         #return np.mean(base_x, axis=1)
 
     @classmethod
-    def normalize(cls, seconds: np.ndarray, volts: np.ndarray, signal_saturation_level:float=-0.52) -> tuple[np.ndarray, np.ndarray]:
+    def normalize(cls, seconds: np.ndarray, volts: np.ndarray, signal_saturation_level:float=-0.52) -> Tuple[np.ndarray, np.ndarray]:
         """
         Normalize signal to be between 0 and 1 by calculating the baseline and peak maximum!
         It also removes any saturated signals by setting the arrays to np.nan

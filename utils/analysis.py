@@ -11,6 +11,8 @@ import warnings
 warnings.filterwarnings("ignore")
 from dataclasses import dataclass
 from scipy.stats import stats
+from typing import Tuple
+
 
 import sys
 class HiddenPrints:
@@ -127,7 +129,7 @@ def fnalOffset(events):
     offset = -clockScale*np.array(shifts,dtype=float)
     return offset
 
-def fit_gauss(h: Hist) -> tuple[np.ndarray]:
+def fit_gauss(h: Hist) -> Tuple[np.ndarray]:
     """
     Fits gaussian to 1D Hist histogram
     """
